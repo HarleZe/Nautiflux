@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-bg: var(--theme-bg);
+  --color-theme-text: var(--theme-text);
+  --color-theme-surface: var(--theme-surface);
+  --color-theme-border: var(--theme-border);
+}
+
+:root[data-theme="aurum"] {
+  --theme-bg: #fffbf0;
+  --theme-text: #4a3728;
+  --theme-surface: #fdf5e6;
+  --theme-border: #e6ccb2;
+}
+
+:root[data-theme="dark"] {
+  --theme-bg: #020617;
+  --theme-text: #e2e8f0;
+  --theme-surface: #0f172a;
+  --theme-border: #1e293b;
+}
+
+@layer base {
+  body {
+    @apply bg-theme-bg text-theme-text min-h-screen font-sans;
+  }
+}
+
+@layer components {
+  .hero-banner {
+    @apply h-64 w-full rounded-2xl border-2 border-theme-border bg-theme-surface flex flex-col items-center justify-center gap-4;
+  }
+
+  .play-button {
+    @apply px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full text-sm font-semibold transition-colors;
+  }
+
+  .movie-card {
+    @apply min-w-[150px] aspect-[4/3] rounded-xl border border-theme-border bg-theme-surface flex items-center justify-center cursor-pointer hover:border-indigo-500/50 transition-colors;
+  }
+
+  .poster-card {
+    @apply aspect-[2/3] rounded-xl border border-theme-border bg-theme-surface flex flex-col p-4 gap-2 cursor-pointer hover:border-indigo-500/50 transition-colors;
+  }
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
