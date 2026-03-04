@@ -2,7 +2,7 @@
 
 Nautiflux est une application media player moderne, fluide et responsive, conçue pour offrir une expérience utilisateur inspirée des plateformes comme Netflix ou Disney+.
 
-Ce projet a été réalisé dans le cadre d'un cours de **Master 1 (M1)** portant sur **Tailwind CSS**. Il a été réalisé par **Louis CONSTANT** et **Corentin GUILLAUME**.
+Ce projet a été réalisé dans le cadre d'un cours de **Master 1** portant sur **Tailwind**. Il a été réalisé par **Louis CONSTANT** et **Corentin GUILLAUME**.
 
 ## Fonctionnalités Clés
 
